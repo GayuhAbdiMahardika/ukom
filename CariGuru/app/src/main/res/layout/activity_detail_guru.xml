@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailGuruActivity">
+
+
+  <LinearLayout
+      android:id="@+id/linearLayout3"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/dark_blue"
+      android:orientation="horizontal"
+      android:padding="8dp"
+      android:weightSum="8"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="?attr/homeAsUpIndicator"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Detail Guru"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/dark_blue"
+          android:orientation="vertical"
+          android:padding="32dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            app:srcCompat="@drawable/pp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gayuh Abdi Mahardika"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Matematika, Fisika, Kimia"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SMK Negeri 2 Buduran"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+          <ImageView
+              android:id="@+id/imageView8"
+              android:layout_width="24dp"
+              android:layout_height="24dp"
+              android:layout_marginRight="8dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/star"
+              app:tint="@color/white" />
+
+          <TextView
+              android:id="@+id/textView34"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:text="4,5 (20 review)"
+              android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sidoarjo, Jawa Timur"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rp.100.000 / jam"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal">
+
+          <ImageView
+              android:id="@+id/imageView9"
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/facebook" />
+
+          <ImageView
+              android:id="@+id/imageView10"
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/whatsapp" />
+
+          <ImageView
+              android:id="@+id/imageView11"
+              android:layout_width="32dp"
+              android:layout_height="32dp"
+              android:layout_weight="1"
+              app:srcCompat="@drawable/instagram" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Penawaran"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="16dp"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matematika, Bahasa Indonesia, IPA"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kelas 6 SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8x Pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 menit / pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/textView49"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Rp. 200.000" />
+
+              <TextView
+                  android:id="@+id/textView48"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="8dp"
+                  android:layout_weight="1"
+                  android:text="Rp. 150.000"
+                  android:textColor="@color/dark_grey"
+                  android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/dark_blue"
+                android:text="Pesan"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matematika, Bahasa Indonesia, IPA"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kelas 6 SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8x Pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 menit / pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/textView49"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Rp. 200.000" />
+
+              <TextView
+                  android:id="@+id/textView48"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="8dp"
+                  android:layout_weight="1"
+                  android:text="Rp. 150.000"
+                  android:textColor="@color/dark_grey"
+                  android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/dark_blue"
+                android:text="Pesan"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matematika, Bahasa Indonesia, IPA"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kelas 6 SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8x Pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 menit / pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/textView49"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="Rp. 200.000" />
+
+              <TextView
+                  android:id="@+id/textView48"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="8dp"
+                  android:layout_weight="1"
+                  android:text="Rp. 150.000"
+                  android:textColor="@color/dark_grey"
+                  android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/dark_blue"
+                android:text="Pesan"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="100dp"
+          android:orientation="vertical"
+          android:padding="16dp"
+          android:paddingBottom="100dp">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Review"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+              <ImageView
+                  android:id="@+id/imageView14"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView15"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView16"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView17"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView18"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ken Narendra"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" />
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+              <ImageView
+                  android:id="@+id/imageView14"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView15"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView16"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView17"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView18"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ken Narendra"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" />
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+              <ImageView
+                  android:id="@+id/imageView14"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView15"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView16"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView17"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+
+              <ImageView
+                  android:id="@+id/imageView18"
+                  android:layout_width="16dp"
+                  android:layout_height="16dp"
+                  android:layout_weight="1"
+                  android:tint="#F1DD31"
+                  app:srcCompat="@drawable/star" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ken Narendra"
+                android:textColor="@color/dark_grey"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" />
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Laporkan Guru"
+            android:textColor="@color/white" />
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

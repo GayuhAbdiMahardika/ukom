@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Paket UN SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMapel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matematika, Bahasa Indonesia, IPA"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvJenjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kelas 6 SD"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvPertemuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8x Pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvMenit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 menit / pertemuan"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHargaAsli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rp. 200.000" />
+
+                <TextView
+                    android:id="@+id/tvHargaDiskon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="Rp. 150.000"
+                    android:textColor="@color/dark_grey"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/dark_blue"
+                android:text="Edit"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>

@@ -1,8 +1,11 @@
 package com.gayuh.cariguru;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -55,6 +58,20 @@ public class LesFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
         ((AppCompatActivity)getActivity()).getSupportActionBar().hide();
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        CardView cvLes = getActivity().findViewById(R.id.cvLes);
+        cvLes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), DetailLesActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override

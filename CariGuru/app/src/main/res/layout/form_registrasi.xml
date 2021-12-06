@@ -54,7 +54,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName10"
+                android:id="@+id/etNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -67,16 +67,16 @@
                 android:textColor="#525252"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="Kolom nama tidak boleh kosong"
-                android:textColor="@color/red_error"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView12"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Kolom nama tidak boleh kosong"-->
+<!--                android:textColor="@color/red_error"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
 
             <TextView
                 android:id="@+id/textView5"
@@ -89,7 +89,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName8"
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -101,15 +101,15 @@
                 android:textColor="#525252"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="Kolom email tidak boleh kosong"
-                android:textColor="@color/red_error"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView12"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Kolom email tidak boleh kosong"-->
+<!--                android:textColor="@color/red_error"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
 
             <TextView
                 android:id="@+id/textView10"
@@ -122,7 +122,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName13"
+                android:id="@+id/etNoTelp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -134,15 +134,15 @@
                 android:textColor="#525252"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="Kolom no telpon tidak boleh kosong"
-                android:textColor="@color/red_error"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView12"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Kolom no telpon tidak boleh kosong"-->
+<!--                android:textColor="@color/red_error"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
 
             <TextView
                 android:id="@+id/textView11"
@@ -346,7 +346,7 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -356,7 +356,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName14"
+                android:id="@+id/etAlamatLengkap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -367,15 +367,15 @@
                 android:maxHeight="48dp"
                 android:textColor="#525252"
                 tools:ignore="TouchTargetSizeCheck" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="Kolom alamat lengkap tidak boleh kosong"
-                android:textColor="@color/red_error"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView12"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Kolom alamat lengkap tidak boleh kosong"-->
+<!--                android:textColor="@color/red_error"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
 
 
             <TextView
@@ -389,7 +389,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName17"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -400,15 +400,15 @@
                 android:maxHeight="48dp"
                 android:textColor="#525252"
                 tools:ignore="TouchTargetSizeCheck" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="Kolom password tidak boleh kosong"
-                android:textColor="@color/red_error"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView12"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Kolom password tidak boleh kosong"-->
+<!--                android:textColor="@color/red_error"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
 
 
             <TextView
@@ -422,7 +422,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName18"
+                android:id="@+id/etKonfirmasiPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -433,19 +433,18 @@
                 android:maxHeight="48dp"
                 android:textColor="#525252"
                 tools:ignore="TouchTargetSizeCheck" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="Kolom konfirmasi password tidak boleh kosong"
-                android:textColor="@color/red_error"
-                android:textSize="12sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView12"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
-
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:text="Kolom konfirmasi password tidak boleh kosong"-->
+<!--                android:textColor="@color/red_error"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/imageView12"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
 
             <Button
-                android:id="@+id/btnDaftar2"
+                android:id="@+id/btnCaptha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -453,13 +452,29 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/button1"
-                android:onClick="onClickDaftarBtn"
+                android:paddingLeft="30dp"
+                android:onClick="onClickCaptha"
+                android:paddingRight="30dp"
+                android:text="saya bukan robot"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/button1"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
                 android:text="Daftar"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail2" />
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
         </LinearLayout>
 

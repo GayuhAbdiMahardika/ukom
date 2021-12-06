@@ -1,5 +1,6 @@
 package com.gayuh.cariguru;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -11,10 +12,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
+import com.gayuh.cariguru.adapter.LesHomeAdapter;
 import com.gayuh.cariguru.adapter.PromoHomeAdapter;
+import com.gayuh.cariguru.model.Jadwal;
 import com.gayuh.cariguru.model.Promo;
+import com.gayuh.cariguru.siswa.MainActivitySiswa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +41,10 @@ public class HomeFragment extends Fragment {
     private String mParam2;
 
     PromoHomeAdapter promoHomeAdapter;
+    LesHomeAdapter lesHomeAdapter;
+
     List<Promo> listPromo;
+    List<Jadwal> listJadwal;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -69,39 +77,77 @@ public class HomeFragment extends Fragment {
         }
         ((AppCompatActivity)getActivity()).getSupportActionBar().hide();
 
-//        EditText etSearch = getActivity().findViewById(R.id.search);
-//        etSearch.bringToFront();
-
-//        listPromo = new ArrayList<Promo>();
-//        listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
-//        listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
-//        listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
-//        listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
-//
-//        promoHomeAdapter = new PromoHomeAdapter(getContext(), listPromo);
-//        recyclerView.setAdapter(promoHomeAdapter);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        RecyclerView recyclerView = getActivity().findViewById(R.id.rcvPromoHome);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
 
+        RecyclerView rcvPromoHome = getActivity().findViewById(R.id.rcvPromoHome);
+        rcvPromoHome.setLayoutManager(new LinearLayoutManager(getContext()));
         listPromo = new ArrayList<Promo>();
         listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
         listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
         listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
         listPromo.add(new Promo("Promo UN","Matematika","4","2","100.000","20"));
-
         promoHomeAdapter = new PromoHomeAdapter(getContext(), listPromo);
-        recyclerView.setAdapter(promoHomeAdapter);
+        rcvPromoHome.setAdapter(promoHomeAdapter);
+
+//        RecyclerView rcvJadwalHome = getActivity().findViewById(R.id.rcvJadwalHome);
+//        rcvJadwalHome.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+//        listJadwal = new ArrayList<Jadwal>();
+//        listJadwal.add(new Jadwal("Matematika","Mas Kevin", "01-10-2021","Senin","10.00","12.00"));
+//        listJadwal.add(new Jadwal("Matematika","Mas Kevin", "01-10-2021","Senin","10.00","12.00"));
+//        listJadwal.add(new Jadwal("Matematika","Mas Kevin", "01-10-2021","Senin","10.00","12.00"));
+//        listJadwal.add(new Jadwal("Matematika","Mas Kevin", "01-10-2021","Senin","10.00","12.00"));
+//        listJadwal.add(new Jadwal("Matematika","Mas Kevin", "01-10-2021","Senin","10.00","12.00"));
+//        lesHomeAdapter = new LesHomeAdapter(getContext(),listJadwal);
+//        rcvJadwalHome.setAdapter(lesHomeAdapter);
+
+        LinearLayout etSearch = getActivity().findViewById(R.id.etSearch);
+        etSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), SearchActivity.class);
+                startActivity(i);
+            }
+        });
+
+//        Button btnSiswa = getActivity().findViewById(R.id.btnSiswa);
+//        btnSiswa.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), MainActivitySiswa.class);
+//                i.putExtra("frgToLoad",R.id.fr_home);
+//                startActivity(i);
+//            }
+//        });
+//
+//        Button btnGuru = getActivity().findViewById(R.id.btnGuru);
+//        btnGuru.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), MainActivitySiswa.class);
+//                i.putExtra("frgToLoad",R.id.fr_home);
+//                startActivity(i);
+//            }
+//        });
+
+//        LinearLayout btnKategori = getActivity().findViewById(R.id.btnKategori);
+//        btnKategori.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getActivity(), CariGuruActivity.class);
+//                startActivity(i);
+//            }
+//        });
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.home, container, false);
+        return inflater.inflate(R.layout.home_belum_login, container, false);
     }
 }

@@ -3,21 +3,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="320dp"
+    android:id="@+id/item_promo"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/button2"
         android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/tvJudulPromo">
 
 
         <androidx.cardview.widget.CardView
@@ -57,42 +58,41 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvPertemuan"
+            android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="4x Pertemuan"
             android:textColor="@color/dark_grey"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/cardview"
-            app:layout_constraintTop_toBottomOf="@+id/tvMapel" />
+            app:layout_constraintTop_toBottomOf="@+id/tvGuru" />
 
         <TextView
-            android:id="@+id/tvMapel"
+            android:id="@+id/tvGuru"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="2dp"
             android:text="Matematika"
             android:textColor="@color/dark_grey"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/cardview"
             app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
 
         <TextView
-            android:id="@+id/tvHargaAsli"
+            android:id="@+id/tvJam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginBottom="16dp"
             android:text="Rp. 200.000"
             android:textColor="@color/dark_grey"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardview"
-            app:layout_constraintTop_toBottomOf="@+id/tvPertemuan" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
         <TextView
             android:id="@+id/tvHargaDiskon"
@@ -102,11 +102,11 @@
             android:layout_marginBottom="16dp"
             android:text="Rp. 150.000"
             android:textColor="@color/red"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tvHargaAsli"
-            app:layout_constraintTop_toBottomOf="@+id/tvPertemuan"
+            app:layout_constraintStart_toEndOf="@+id/tvJam"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button

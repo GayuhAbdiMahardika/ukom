@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gayuh.cariguru">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,20 +10,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CariGuru">
         <activity
+            android:name=".siswa.FormPesanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".siswa.MainActivitySiswa"
+            android:exported="true" />
+        <activity
+            android:name=".auth.Registrasi2"
+            android:exported="true" />
+        <activity
+            android:name=".BeliMembershipActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TambahPenawaranActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.RegistrasiGuruActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailLesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailGuruActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CariGuruActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true" />
+        <activity
             android:name=".auth.Registrasi"
             android:exported="true" />
         <activity
             android:name=".auth.login"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
